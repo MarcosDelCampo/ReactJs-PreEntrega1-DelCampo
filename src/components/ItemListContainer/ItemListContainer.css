@@ -1,0 +1,10 @@
+.ItemListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.greeting{
+    font-size: 18vw;
+    color: #A52A2A;
+  }

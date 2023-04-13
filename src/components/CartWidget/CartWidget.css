@@ -1,0 +1,14 @@
+.cartDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+  }
+  
+  .ImgCart {
+    height: 4vh;
+  }
+
+  .cart-acc-number{
+    font-size: 3vh;
+  }

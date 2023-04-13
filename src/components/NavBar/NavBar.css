@@ -1,0 +1,34 @@
+.NavBar {
+    background-color: #FF781F;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100vw;
+  }
+  
+  .NavBar > h2 {
+    font-size: 8vh;
+  }
+  
+  .nav-btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 8vh;
+  }
+  
+  .itemBtn {
+    padding: 5px 5px;
+    background-color: #A52A2A;
+    color: #FF781F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 100%;
+    height: 100%;
+    width: 10vw;
+  }
