@@ -1,13 +1,23 @@
 .NavBar {
-    background-color: #FF781F;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: auto;
-    width: 100vw;
+    width: 90vw;
+    margin: 10px 0px;
   }
   
-  .NavBar > h2 {
+  .NavBar a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .NavBar h2 {
     font-size: 8vh;
   }
   
@@ -31,4 +41,17 @@
     font-size: 100%;
     height: 100%;
     width: 10vw;
+  }
+
+  .ActiveOption{
+    padding: 5px 5px;
+    background-color: #ec5757;
+    color: #A52A2A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 100%;
+    height: 100%;
+    width: 14vw;
   }

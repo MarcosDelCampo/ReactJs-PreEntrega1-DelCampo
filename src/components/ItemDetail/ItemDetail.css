@@ -1,0 +1,17 @@
+.CardItemDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: 500px;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.ItemDetailImg{
+    width: 60%;
+}

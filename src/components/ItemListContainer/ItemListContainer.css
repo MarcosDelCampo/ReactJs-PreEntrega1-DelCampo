@@ -3,8 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: transparent;
 }
 .greeting{
-    font-size: 18vw;
+    font-size: 10vw;
     color: #A52A2A;
+    margin: 5px 0px;
   }
