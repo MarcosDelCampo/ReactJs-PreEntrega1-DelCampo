@@ -8,7 +8,7 @@ body {
   font-family: 'Sofia Sans Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(255,120,31);
+  background: #FF781F;
 }
 
 code {

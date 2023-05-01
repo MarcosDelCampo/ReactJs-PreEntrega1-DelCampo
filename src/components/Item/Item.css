@@ -19,6 +19,9 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: x-large;
+    margin: 0px;
+    padding: 3px;
   }
 
 .ItemImg{
@@ -31,8 +34,16 @@
     text-align: center;
 }
 .ItemBtn {
-    background-color: #A52A2A;
+    background-color: #056EFF;
     width: 150%;
     border-radius: 5px;
 
+}
+
+.ItemFooter {
+    display: flex;
+}
+
+.Info {
+    font-size: large;
 }
