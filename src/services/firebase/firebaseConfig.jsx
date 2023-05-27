@@ -3,12 +3,12 @@ import { getFirestore } from 'firebase/firestore'
 
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyDsXPUELJdjf7EQPXHzUk_4wZ4DFg7nrjY",
-  authDomain: "bestetheater.firebaseapp.com",
-  projectId: "bestetheater",
-  storageBucket: "bestetheater.appspot.com",
-  messagingSenderId: "979305561374",
-  appId: "1:979305561374:web:d55149c9c635892edc9d0f"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId
 };
 
 
