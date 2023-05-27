@@ -1,3 +1,4 @@
+import './Checkout.css'
 import { useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Timestamp, addDoc, collection, documentId, getDocs, query, where, writeBatch } from "firebase/firestore"
@@ -11,13 +12,19 @@ export const Checkout = () => {
 
     const { cart, cartTotal, clearCart } = useContext(CartContext)
 
-    const createOrder = async ({ name, phone, email }) => {
+    const createOrder = async ({ name, phone, email, emailConfirm }) => {
+        if (email !== emailConfirm) {
+            alert("los email's no coinciden")
+            setLoading(false);  
+            return;
+        }
+
         setLoading(true)
 
         try {
             const objOrder = {
                 buyer: {
-                    name, phone, email
+                    name, phone, email, emailConfirm
                 },
                 items: cart,
                 total: Number(cartTotal),
@@ -71,15 +78,15 @@ export const Checkout = () => {
     }
 
     if(loading) {
-        return <h1>Se está generando su orden...</h1>
+        return <h1 className='Mensaje'>Se está generando su orden...</h1>
     }
 
     if(orderId) {
-        return <h1>El id de su orden es: { orderId }</h1>
+        return <h1 className='Mensaje'>El id de su orden es: { orderId }</h1>
     }
 
     return (
-        <div>
+        <div className='Checkout'>
             <h1>Checkout</h1>
             <CheckoutForm onConfirm={createOrder}/>
         </div>

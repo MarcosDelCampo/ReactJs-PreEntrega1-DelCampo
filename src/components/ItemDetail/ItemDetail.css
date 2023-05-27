@@ -15,3 +15,20 @@
 .ItemDetailImg{
     width: 60%;
 }
+
+.Option {
+    background-color: #056EFF;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    width: 25vw;
+
+}

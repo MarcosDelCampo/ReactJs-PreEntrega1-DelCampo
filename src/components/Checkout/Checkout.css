@@ -1,18 +1,14 @@
-.ItemListContainer{
+.Checkout{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    background-color: transparent;
+    justify-content: center;
+    gap: 3px;
 }
-.greeting{
-    font-size: 10vw;
-    color: #000000;
-    margin: 5px 0px;
-}
-.loading{
+.Mensaje{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: xx-large;
+    margin-top: 40px;
 }

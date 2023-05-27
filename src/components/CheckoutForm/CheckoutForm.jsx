@@ -5,12 +5,13 @@ export const CheckoutForm = ({ onConfirm }) => {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
+    const [emailConfirm, setEmailConfirm] = useState('')
 
     const handleConfirm = (event) => {
         event.preventDefault()
 
         const userData = {
-            name, phone, email
+            name, phone, email, emailConfirm
         }
 
         onConfirm(userData)
@@ -45,8 +46,17 @@ export const CheckoutForm = ({ onConfirm }) => {
                     onChange={({ target }) => setEmail(target.value)}
                     />
                 </label>
+                <label className='Label'>
+                    Confirmar Email
+                    <input
+                    className='Input'
+                    type='email'
+                    value={emailConfirm}
+                    onChange={({ target }) => setEmailConfirm(target.value)}
+                    />
+                </label>
                 <div className='Label'>
-                    <button type='submit' className='Button'>Crear Orden</button>
+                    <button type='submit' className='ButtonCO'>Crear Orden</button>
                 </div>
 
             </form>

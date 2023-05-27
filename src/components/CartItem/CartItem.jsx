@@ -1,3 +1,4 @@
+import './CartItem.css'
 import React from 'react'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
@@ -9,10 +10,10 @@ export const CartItem = ({name, price, quantity, id}) => {
   return (
     <div>
       <section className='producto-carrito'>
-        <h4>{name}</h4>
-        <h4>Precio por unidad: ${price}</h4>
-        <h4>{quantity}</h4>
-        <button onClick={()=> removeItem(id)} className='btn'>Eliminar producto</button>
+        <h2>{name}</h2>
+        <h2>Precio por unidad: ${price}</h2>
+        <h2>{quantity}</h2>
+        <button onClick={()=> removeItem(id)} className='Button'>Eliminar producto</button>
       </section>
     </div>
   )
